@@ -1,0 +1,45 @@
+Arquitectura de Estilos Sass (Estructura 7-1)
+Esta guía define la organización lógica de los archivos de estilo para el proyecto.
+
+📁 1. Abstracts (Configuración)
+Esta carpeta no genera CSS por sí sola; son las herramientas que usaremos en el resto del proyecto.
+
+_variables.scss: Centraliza todos los valores reutilizables como paleta de colores, fuentes, sombras y espaciados.
+
+_mixins.scss: Contiene funciones que automatizan tareas repetitivas (ej. Media Queries para responsive o centrados con Flexbox).
+
+_functions.scss: Cálculos matemáticos complejos para valores dinámicos.
+
+📁 2. Base (Cimientos)
+Define el estilo global que tendrá toda la aplicación sin importar la página.
+
+_reset.scss: Limpia los estilos por defecto de los navegadores para que la web se vea igual en todos lados.
+
+_typography.scss: Configura el aspecto global de los textos: tamaños de h1-h6, interlineado de p y estilos de enlaces.
+
+_animations.scss: Declaración de @keyframes y efectos de transición globales.
+
+📁 3. Layout (Estructura Macro)
+Se encarga de las piezas grandes que envuelven el contenido de la web.
+
+_header.scss: Estilos exclusivos de la barra de navegación y el menú superior.
+
+_footer.scss: Diseño del pie de página.
+
+_grid.scss: Configuración de contenedores principales y sistemas de columnas (si no usas una librería externa).
+
+📁 4. Components (Piezas Reutilizables)
+Elementos pequeños e independientes que se pueden repetir en cualquier lugar.
+
+_buttons.scss: Estilos para todos los botones del sitio (primarios, secundarios, estados hover).
+
+_cards.scss: Diseño de tarjetas de productos, testimonios o servicios.
+
+_forms.scss: Estilos para inputs, selectores y etiquetas de formulario.
+
+📁 5. Pages (Diseño Específico)
+A veces una página necesita estilos únicos que no se usan en ninguna otra parte.
+
+_home.scss: Reglas que solo aplican a la página de inicio.
+
+_contact.scss: Estilos exclusivos para la vista de contacto.
