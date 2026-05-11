@@ -1,7 +1,15 @@
 html * {
-    font-family: $roboto-font;
+  font-family: $primary-font;
 }
- 
+
 body {
-    overflow-x: hidden;
-} 
+  overflow-x: hidden;
+
+  h1,
+  h2,
+  h3 {
+    font-family: $titles-font;
+    color: $amarillo;
+    text-shadow: 1px 1px 1px black;
+  }
+}
