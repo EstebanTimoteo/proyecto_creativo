@@ -1,0 +1,35 @@
+main.ubicacion {
+  section {
+    form {
+      @include forma;
+      background-color: $marfil;
+      padding: 20px;
+
+      fieldset {
+        border: 2px solid black;
+      }
+
+      div {
+        display: flex;
+        justify-content: end;
+
+        button {
+          @include enlace;
+          text-shadow: 3px 3px 3px black;
+        }
+      }
+    }
+  }
+
+  section {
+    address {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background-color: $marfil;
+      padding: 20px;
+      font-size: 30px;
+      width: 100%;
+    }
+  }
+}

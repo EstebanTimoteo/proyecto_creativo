@@ -1,0 +1,82 @@
+@mixin forma {
+  legend {
+    font-size: 30px;
+    color: $amarillo;
+    font-weight: bold;
+    text-shadow: 3px 3px 10px black;
+  }
+
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      font-size: 20px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid black;
+      background: transparent;
+      outline: none;
+      color: black;
+      font-size: 16px;
+      padding-bottom: 16px;
+      padding-left: 24px;
+
+      &:focus {
+        border-bottom: 3px solid $verde;
+      }
+      &:invalid:not(:focus):not(:placeholder-shown),
+      &:invalid:not(:focus):placeholder-shown:not(:placeholder-shown) {
+        border-bottom: 1px solid red;
+
+        & + .error-message {
+          display: block;
+        }
+      }
+
+      &:-webkit-autofill {
+        -webkit-text-fill-color: black !important;
+        -webkit-text-fill-color: 3px solid black !important;
+        box-shadow: 0 0 0px 1000px $marfil inset !important;
+      }
+
+      &:user-invalid {
+        border-bottom: 3px solid red;
+
+        & + .error-message {
+          display: block;
+        }
+      }
+    }
+    input.foto {
+      &::file-selector-button {
+        @include enlace;
+        text-shadow: 3px 3px 3px black;
+        display: flex;
+        margin-bottom: 10px;
+      }
+      border-bottom: 0px;
+      margin-top: 20px;
+    }
+  }
+
+  div.botones {
+    margin-top: 30px;
+    flex-direction: row;
+    justify-content: space-around;
+    button,
+    input.limpiar {
+      @include enlace;
+      text-shadow: 3px 3px 3px black;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+main {
+  table {
+    max-width: 100%;
+    width: 100%;
+    background-color: $marfil;
+
+    tr {
+      font-size: 40px;
+    }
+
+    figure {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 90%;
+      }
+      figcaption {
+        margin-top: 40px;
+        text-align: center;
+        font-weight: 900;
+      }
+    }
+  }
+  margin-bottom: 30px;
+}

@@ -1,0 +1,19 @@
+footer {
+  border-top: 5px solid black;
+
+  section {
+    margin-top: 20px;
+    font-size: 50px;
+
+    p {
+      text-align: center;
+      line-height: 2;
+    }
+
+    a {
+      @include enlace;
+      text-shadow: 3px 3px 3px black;
+      text-align: center;
+    }
+  }
+}

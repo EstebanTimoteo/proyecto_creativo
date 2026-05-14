@@ -1,0 +1,28 @@
+body.inicio {
+  main {
+    min-height: 100vh;
+  }
+  form {
+    background-color: $marfil;
+    padding: 20px;
+    max-width: 100%;
+    width: 100%;
+    background-color: $marfil;
+    padding: 20px;
+    @include forma;
+
+    div.boton {
+      display: flex;
+      align-items: end;
+      justify-content: end;
+      margin-top: 30px;
+
+      button.inicio {
+        align-items: end;
+        width: 20%;
+        @include enlace;
+        text-shadow: 3px 3px 3px black;
+      }
+    }
+  }
+}

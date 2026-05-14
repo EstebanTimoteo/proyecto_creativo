@@ -1,12 +1,24 @@
 @import "./abstracts/abstracts";
+@import "./abstracts/forms";
 @import "./abstracts/variables";
+
 @import "./vendors/vendors";
+
 @import "./base/base";
+
 @import "./components/components";
+
 @import "./layout/footer";
 @import "./layout/header";
 @import "./layout/layout";
-@import "./pages/pages";
+
+@import "./pages/contacto";
+@import "./pages/home";
+@import "./pages/noticias";
+@import "./pages/login";
+@import "./pages/registro";
+@import "./pages/whoarewe";
+
 @import "./themes/default";
 @import "./themes/themes";
 @import "settings";
