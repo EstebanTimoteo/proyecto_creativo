@@ -4,6 +4,14 @@
     color: $amarillo;
     font-weight: bold;
     text-shadow: 3px 3px 10px black;
+
+    @include breakpoint(tablet) {
+      font-size: 60px;
+    }
+
+    @include breakpoint(desktop) {
+      font-size: 90px;
+    }
   }
 
   fieldset {
@@ -17,6 +25,15 @@
       flex-direction: row;
       gap: 20px;
       font-size: 20px;
+      font-weight: bold;
+
+      @include breakpoint(tablet) {
+        font-size: 30px;
+      }
+
+      @include breakpoint(desktop) {
+        font-size: 40px;
+      }
     }
 
     input,
@@ -51,10 +68,14 @@
 
       &:user-invalid {
         border-bottom: 3px solid red;
+      }
 
-        & + .error-message {
-          display: block;
-        }
+      @include breakpoint(tablet) {
+        font-size: 30px;
+      }
+
+      @include breakpoint(desktop) {
+        font-size: 40px;
       }
     }
     input.foto {

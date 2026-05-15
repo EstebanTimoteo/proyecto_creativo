@@ -1,6 +1,7 @@
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
 @import "./abstracts/abstracts";
 @import "./abstracts/forms";
-@import "./abstracts/variables";
 
 @import "./vendors/vendors";
 
@@ -13,6 +14,8 @@
 @import "./layout/layout";
 
 @import "./pages/contacto";
+@import "./pages/cursos";
+@import "./pages/aviso_legal";
 @import "./pages/home";
 @import "./pages/noticias";
 @import "./pages/login";

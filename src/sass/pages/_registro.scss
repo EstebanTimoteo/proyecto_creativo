@@ -1,4 +1,8 @@
 section.formulario {
+  @include breakpoint(tablet) {
+    max-width: 100%;
+    width: 80%;
+  }
   form {
     background-color: $marfil;
     padding: 20px;

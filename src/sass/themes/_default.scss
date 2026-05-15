@@ -1,11 +1,13 @@
 html * {
   font-family: $primary-font;
+  max-width: 100%;
 }
 
 body {
   overflow-x: hidden;
   padding: 20px 30px;
   background-color: $verde;
+  max-width: 100%;
 
   h1,
   h2,
@@ -17,34 +19,68 @@ body {
   }
 
   h1 {
-    font-size: 90px;
+    font-size: 50px;
     margin-bottom: 30px;
+
+    @include breakpoint(tablet) {
+      font-size: 90px;
+    }
+
+    @include breakpoint(desktop) {
+      font-size: 120px;
+    }
   }
 
   h2 {
-    font-size: 65px;
+    font-size: 40px;
     margin-bottom: 30px;
     background-color: rgba($marfil, 0.7);
     padding: 20px 40px;
+
+    @include breakpoint(tablet) {
+      font-size: 65px;
+    }
+
+    @include breakpoint(desktop) {
+      font-size: 75px;
+    }
   }
 
   h3 {
-    font-size: 45px;
+    font-size: 35px;
     margin-bottom: 30px;
     text-decoration: underline;
+
+    @include breakpoint(tablet) {
+      font-size: 45px;
+    }
+
+    @include breakpoint(desktop) {
+      font-size: 55px;
+    }
   }
 
   p {
-    font-size: 40px;
+    font-size: 20px;
     text-align: justify;
     margin-bottom: 30px;
     line-height: 1.5;
-    padding: 5px 80px;
+    padding: 5px 40px;
     font-weight: bold;
 
     a {
       @include enlace;
       text-shadow: 3px 3px 3px black;
+    }
+
+    @include breakpoint(tablet) {
+      font-size: 40px;
+      width: 90%;
+    }
+
+    @include breakpoint(desktop) {
+      font-size: 50px;
+      width: 80%;
     }
   }
 
@@ -54,7 +90,13 @@ body {
     margin-bottom: 40px;
     img {
       max-width: 100%;
-      width: 60%;
+      width: 100%;
+    }
+
+    @include breakpoint(desktop) {
+      img {
+        width: 60%;
+      }
     }
   }
 }

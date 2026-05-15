@@ -1,11 +1,25 @@
 main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   table {
     max-width: 100%;
     width: 100%;
     background-color: $marfil;
 
+    @include breakpoint(desktop) {
+      width: 90%;
+    }
+
     tr {
-      font-size: 40px;
+      font-size: 20px;
+
+      @include breakpoint(tablet) {
+        font-size: 30px;
+      }
+      @include breakpoint(desktop) {
+        font-size: 60px;
+      }
     }
 
     figure {
@@ -21,6 +35,28 @@ main {
         margin-top: 40px;
         text-align: center;
         font-weight: 900;
+        font-size: 10px;
+
+        @include breakpoint(tablet) {
+          font-size: 35px;
+        }
+
+        @include breakpoint(desktop) {
+          font-size: 45px;
+        }
+      }
+    }
+
+    td p {
+      font-size: 15px;
+      @include breakpoint(tablet) {
+        font-size: 30px;
+        padding-right: 0;
+      }
+
+      @include breakpoint(desktop) {
+        font-size: 50px;
+        padding-right: 0;
       }
     }
   }

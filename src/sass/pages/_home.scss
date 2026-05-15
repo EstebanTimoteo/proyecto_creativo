@@ -6,4 +6,30 @@ main {
     margin-bottom: 30px;
     padding-bottom: 40px;
   }
+
+  section.cursos,
+  section.noticias {
+    article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+      padding-bottom: 40px;
+
+      figure {
+        width: 90%;
+      }
+
+      @include breakpoint(tablet) {
+        figure {
+          width: 95%;
+        }
+      }
+      @include breakpoint(desktop) {
+        figure {
+          width: 100%;
+        }
+      }
+    }
+  }
 }

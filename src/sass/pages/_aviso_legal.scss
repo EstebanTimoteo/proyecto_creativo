@@ -1,0 +1,41 @@
+main {
+  section {
+    div {
+      p {
+        text-align: left;
+        margin: 0;
+        background-color: $amarillo;
+        width: 100%;
+      }
+      ul {
+        background-color: $marfil;
+        padding: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+
+        @include breakpoint(tablet) {
+          font-size: 30px;
+          gap: 40px;
+        }
+
+        @include breakpoint(desktop) {
+          font-size: 40px;
+          gap: 60px;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
+    text-align: center !important;
+    margin: 0 !important;
+  }
+}
