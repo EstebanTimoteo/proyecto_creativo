@@ -14,17 +14,17 @@ export default defineConfig({
         contacto: resolve(__dirname, "contacto.html"),
 
         cursos: resolve(__dirname, "cursos.html"),
-        cursos: resolve(__dirname, "cursos/ciberseguridad.html"),
-        cursos: resolve(__dirname, "cursos/desarrollo_blockchain.html"),
-        cursos: resolve(__dirname, "cursos/desarrollo_web.html"),
-        cursos: resolve(__dirname, "cursos/inteligencia_artificial.html"),
+        cursos: resolve(__dirname, "./cursos/ciberseguridad.html"),
+        cursos: resolve(__dirname, "./cursos/desarrollo_blockchain.html"),
+        cursos: resolve(__dirname, "./cursos/desarrollo_web.html"),
+        cursos: resolve(__dirname, "./cursos/inteligencia_artificial.html"),
 
         login: resolve(__dirname, "login.html"),
 
         noticias: resolve(__dirname, "noticias.html"),
-        noticias: resolve(__dirname, "noticias/algoritmo.html"),
-        noticias: resolve(__dirname, "noticias/diagrama_flujo.html"),
-        noticias: resolve(__dirname, "noticias/lenguaje_natural.html"),
+        noticias: resolve(__dirname, "./noticias/algoritmo.html"),
+        noticias: resolve(__dirname, "./noticias/diagrama_flujo.html"),
+        noticias: resolve(__dirname, "./noticias/lenguaje_natural.html"),
 
         registro: resolve(__dirname, "registro.html"),
 
