@@ -100,11 +100,11 @@
         </figure>
         <nav>
           <ul>
-            <li>Home</li>
+            <li><a href="./index.html">Home</a></li>
             <li><a href="./whoarewe.html">¿Quienes Somos?</a></li>
             <li><a href="./cursos.html">Cursos</a></li>
             <li><a href="./noticias.html">Blog</a></li>
-            <li><a href="./registro.html">Registro</a></li>
+            <li>Registro</li>
             <li><a href="./login.html">Inicio de Sesion</a></li>
             <li><a href="./contacto.html">Contacto</a></li>
           </ul>
@@ -113,119 +113,73 @@
     </header>
 
     <main>
-      <section>
-        <h1>CONQUER BLOCKS</h1>
-        <figure>
-          <img
-            src="./assets/banner-home-BT8pnwnV.png"
-            alt="Presentación"
-            width="500"
-          />
-        </figure>
-        <p>
-          Transforma tu futuro profesional con la escuela líder en la enseñanza
-          de nuevas profesiones tecnológicas
-        </p>
-      </section>
+      <section class="formulario">
+        <form action="#" enctype="multipart/form-data" method="post">
+          <fieldset>
+            <legend>Datos personales</legend>
 
-      <section>
-        <h2>¿Quienes somos?</h2>
-        <p>
-          Conquer Blocks es la mayor academia de programación en habla hispana,
-          y la que cuenta con mayores garantías de empleo. Aquí podrás aprender
-          sobre Desarrollo Full-Stack, Desarrollo Blockchain, Inteligencia
-          Artificial y Ciberseguridad. Para más información haz
-          <a href="./whoarewe.html">click aqui</a>
-        </p>
-      </section>
+            <div>
+              <label for="nombre">Nombre completo:</label>
+              <input type="text" name="nombre" id="nombre" size="40" />
+            </div>
+            <br />
 
-      <section class="cursos">
-        <h2>Ultimos Cursos</h2>
-        <article>
-          <h3>Master en desarrollo web y full stack</h3>
-          <figure>
-            <img
-              src="./assets/desarrollo_web-nxVgP1ye.avif"
-              alt="desarrollo_web"
-              width="200px"
-            />
-          </figure>
-          <p>
-            La formación donde aprenderás todo lo que necesitas para convertirte
-            en Desarrollador Full-Stack, aunque partas desde cero en el mundo de
-            la programación.
-            <a href="./cursos/desarrollo_web.html">Click aqui</a> para saber
-            más.
-          </p>
-        </article>
+            <div>
+              <label for="fecha">Fecha de nacimiento:</label>
+              <input type="date" />
+            </div>
+            <br />
 
-        <article>
-          <h3>Master en desarrollo Blockchain</h3>
-          <figure>
-            <img
-              src="./assets/desarrollo_blockchain-CIlce0u4.avif"
-              alt="desarrollo_blockchain"
-              width="200px"
-            />
-          </figure>
-          <p>
-            La formación donde aprenderás todo lo que necesitas para convertirte
-            en programador especializado en tecnología Blockchain, y multiplicar
-            tu valor y salario en el mercado laboral.
-            <a href="./cursos/desarrollo_blockchain.html">Click aqui</a> para
-            saber más.
-          </p>
-        </article>
-        <p>Para ver más cursos <a href="./cursos.html">Click aqui</a></p>
-      </section>
+            <div>
+              <label for="email">Correo electrónico:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                size="25"
+                placeholder="ejemplo@gmail.com"
+                required
+              />
+            </div>
+            <br />
 
-      <section class="noticias">
-        <h2>Noticias</h2>
-        <article>
-          <h3>¿Que es un Algoritmo y porqué es tan importante?</h3>
-          <figure>
-            <img
-              src="./assets/algoritmo-Bq6f9GmJ.jpg"
-              alt="algoritmo"
-              width="250"
-            />
-          </figure>
-          <p>
-            ¿Alguna vez te has preguntado cómo Google encuentra respuestas en
-            cuestión de milisegundos o cómo Netflix te recomienda la serie
-            perfecta? Todo esto ocurre gracias a algo llamado *algoritmos*.
-            Pero, ¿qué son realmente? ¿Cómo funcionan? Y, lo más importante,
-            ¿por qué son tan esenciales en la programación y en nuestra vida
-            diaria? En este artículo, desglosaremos este concepto de manera
-            clara y sencilla.
-            <a href="./noticias/algoritmo.html">Click aqui</a> para ver más.
-          </p>
-        </article>
+            <div>
+              <label for="dirección">Dirección:</label>
+              <input type="text" name="dirección" id="dirección" />
+            </div>
+          </fieldset>
 
-        <article>
-          <h3>¿Que es un diagrama de flujo y cual es su utilidad?</h3>
-          <figure>
-            <img
-              src="./assets/diagrama_flujo-BOR50fyM.jpg"
-              alt="diagrama_flujo"
-              width="250"
-            />
-          </figure>
-          <p>
-            ¿Alguna vez te has preguntado cómo los programadores planifican sus
-            programas antes de escribir una sola línea de código? ¿O cómo se
-            representan los procesos de una manera visual y sencilla? Todo esto
-            se hace con una herramienta muy poderosa llamada *diagrama de
-            flujo*. Pero, ¿qué es realmente? ¿Cómo se usa en programación? Y lo
-            más importante, ¿por qué es tan útil para entender cualquier
-            proceso? En este artículo, te explicaremos de manera clara y
-            sencilla qué es un diagrama de flujo y cómo puede ayudarte en la
-            programación y en la vida cotidiana.
-            <a href="./noticias/diagrama_flujo.html">Click aqui</a> para ver
-            más.
-          </p>
-        </article>
-        <p>Para todas la noticias <a href="./noticias.html">Click aqui</a></p>
+          <fieldset>
+            <legend>Extras</legend>
+
+            <div>
+              <label for="pagina">Página Web</label>
+              <input type="text" size="50" />
+            </div>
+            <br />
+
+            <div>
+              <label for="foto">Foto</label>
+              <input type="file" name="foto" id="foto" class="foto" />
+            </div>
+            <br />
+
+            <div>
+              <label for="biografia">Biografía:</label> <br />
+              <textarea
+                name="biografia"
+                id="biografia"
+                rows="5"
+                cols="50"
+              ></textarea>
+            </div>
+          </fieldset>
+
+          <div class="botones">
+            <input type="reset" name="limpiar" id="limpiar" class="limpiar" />
+            <button>Enviar</button>
+          </div>
+        </form>
       </section>
     </main>
 
@@ -233,7 +187,7 @@
       <section>
         <p>
           Consulta Nuestro Aviso legal dando
-          <a href="./aviso_legal.html">click aqui</a>
+          <a href="aviso_legal.html">click aqui</a>
         </p>
       </section>
     </footer>

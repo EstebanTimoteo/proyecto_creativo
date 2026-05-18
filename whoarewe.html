@@ -1,0 +1,386 @@
+<!doctype html>
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./src/assets/favicon/favicon" />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./assets/apple-icon-60x60-EkhHw1Pq.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./assets/apple-icon-72x72-CHsieO_v.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/apple-icon-76x76-CVaTZJDM.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./assets/apple-icon-114x114-C1lXyWsx.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/apple-icon-120x120-BA4HbZd8.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/apple-icon-144x144-CxlPKKow.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/apple-icon-152x152-o2wogn82.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/apple-icon-180x180-DGn-HPPs.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/android-icon-192x192-CpWOF7OL.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32-CFUgeo-4.png"
+    />
+    <link
+      rel="icono"
+      tipo="imagen/png"
+      tamaños="96x96"
+      href="./assets/favicon-96x96-CimnoKLH.png"
+    />
+    <link
+      rel="icono"
+      tipo="imagen/png"
+      tamaños="16x16"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA6lBMVEUdHRsfHx0hIR8eHhwfHxwbGxk+Pjxubm2BgYB6enl1dXR/f346OjkeHhshIR0cHBlCQj95eXh8fXt0dXNycXGEhYM7PDofIB4bGxo2OCaVoFFsdUJhakQyNStzhF1vgmBLWEdsgm1bcWVfenNLYGBcfIUrMzUcGxkaGhpCRSvA0GWgr12EkldTXkB3il1ug2KMrIZTZFNdd22FsKhJYGFvnaw8UVgbGhg1NyaOmVBrdUR7iVVdaUZrfFhpfF1GU0RkfGlTaV9adXFIX2JYe4c1RUsgIBwfIBweHxwfIB0dHhseIB4cHBr///8yuU1EAAAAAWJLR0RNgGggZQAAAAd0SU1FB+kJExEzFq94Y8wAAAB1SURBVBjTY2CgFmBkYmZmZoFzWdnYOTi5OLl5WMFcXj5+AUEhYRFRDjEGcWYGBglJKWkZWTl5BUUlZRVVNXUGDU0tbR1dPX0DQyNjE1MzcwYJC0sraxtbO3sHRydnF1d1oCFuDO4eHh6snh5e4t4+VHM4CgAABBgMwaN8eD0AAAAldEVYdGRhdGU6Y3JlYXRlADIwMjUtMDktMTlUMTc6NTE6MDgrMDA6MDCOjadHAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDI1LTA5LTE5VDE3OjUxOjA4KzAwOjAw/9Af+wAAADx0RVh0aWNjOmNvcHlyaWdodABDb3B5cmlnaHQgSW50ZXJuYXRpb25hbCBDb2xvciBDb25zb3J0aXVtLCAyMDA54ykqQQAAAC50RVh0aWNjOmRlc2NyaXB0aW9uAHNSR0IgSUVDNjE5NjYtMi0xIGJsYWNrIHNjYWxlZP5VDEsAAAA3dEVYdGljYzptb2RlbABJRUMgNjE5NjYtMi0xIERlZmF1bHQgUkdCIENvbG91ciBTcGFjZSAtIHNSR0IXYBYfAAAAIHRFWHRzb2Z0d2FyZQBodHRwczovL2ltYWdlbWFnaWNrLm9yZ7zPHZ0AAAAYdEVYdFRodW1iOjpEb2N1bWVudDo6UGFnZXMAMaf/uy8AAAAYdEVYdFRodW1iOjpJbWFnZTo6SGVpZ2h0ADE5MkBdcVUAAAAXdEVYdFRodW1iOjpJbWFnZTo6V2lkdGgAMTky06whCAAAABl0RVh0VGh1bWI6Ok1pbWV0eXBlAGltYWdlL3BuZz+yVk4AAAAXdEVYdFRodW1iOjpNVGltZQAxNzU4MzA0MjY4PIg1AAAAAA90RVh0VGh1bWI6OlNpemUAMEJClKI+7AAAAFZ0RVh0VGh1bWI6OlVSSQBmaWxlOi8vL21udGxvZy9mYXZpY29ucy8yMDI1LTA5LTE5L2I3MGYyMDI1Y2Q5ZTlhMTMyNTFjMWM1ZGEyY2QyYjU4Lmljby5wbmfIUGc5AAAAAElFTkSuQmCC"
+    />
+    <link rel="manifiesto" href="./src/assets/favicon/manifiesto.json" />
+    <meta nombre="msapplication-TileColor" contenido="#ffffff" />
+    <meta nombre="msapplication-TileImage" contenido="ms-icon-144x144.png" />
+    <meta nombre="theme-color" contenido="#ffffff" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title></title>
+
+    <script type="module" crossorigin src="./assets/main-0YlYi0K5.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-BreHzvOO.css">
+  </head>
+
+  <body>
+    <header>
+      <section>
+        <figure>
+          <img
+            src="./assets/logotipo-conquer-crypto-ChRX2Hpy.png"
+            alt="Logotipo"
+            width="200px"
+          />
+        </figure>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>¿Quienes Somos?</li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="noticias.html">Blog</a></li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="login.html">Inicio de Sesion</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main>
+      <h1>Sobre nosotros</h1>
+      <p>
+        Conquer Blocks es la mayor academia de programación en habla hispana, y
+        la que cuenta con mayores garantías de empleo. Aquí podrás aprender
+        sobre Desarrollo Full-Stack, Desarrollo Blockchain, Inteligencia
+        Artificial y Ciberseguridad.
+      </p>
+
+      <table border="1" cellpadding="5" width="500" align="center">
+        <thead></thead>
+        <tfoot></tfoot>
+        <tbody>
+          <tr>
+            <th colspan="2">Equipo Conquer Blocks</th>
+          </tr>
+          <tr>
+            <th>Nombre</th>
+            <th>Descripción</th>
+          </tr>
+          <tr>
+            <td>
+              <figure>
+                <img
+                  src="./assets/alan-9TXNUaAL.avif"
+                  alt="alan"
+                  width="100"
+                />
+                <figcaption>Alan Buscaglia</figcaption>
+              </figure>
+            </td>
+            <td>
+              <p>
+                Es arquitecto líder front-end con una pasión desbordante por
+                crear aplicaciones escalables y eficientes. Mi experiencia
+                abarca big data, arquitectura, implementación de mejores
+                prácticas.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <figure>
+                <img
+                  src="./assets/alejandro-Cy5rxeqn.avif"
+                  alt="alejandro"
+                  width="100"
+                />
+                <figcaption>Alejandro Medrano</figcaption>
+              </figure>
+            </td>
+            <td>
+              <p>
+                Ingeniero en Machine Learning en Visium tras ocupar el puesto
+                como Data-driven solutions para la resolución de problemas
+                relacionados con el lenguaje natural en Indra.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <figure>
+                <img
+                  src="./assets/alexis-BZENcJ_B.avif"
+                  alt="alexis"
+                  width="100"
+                />
+                <figcaption>Alexis Bautista</figcaption>
+              </figure>
+            </td>
+            <td>
+              <p>
+                Es el fundador y CEO de ConquerX, una plataforma educativa que
+                ofrece cursos y tutoriales sobre criptomonedas, blockchain y
+                desarrollo web.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <figure>
+                <img
+                  src="./assets/angel-BHsWPqjn.avif"
+                  alt="angel"
+                  width="100"
+                />
+                <figcaption>Ángel González</figcaption>
+              </figure>
+            </td>
+            <td>
+              <p>
+                Graduado en Ingeniería Robótica por la UMA, ha trabajado para
+                Avanade, IBM y Banco Santander.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <figure>
+                <img
+                  src="./assets/bienvenido-Dtiw9Ndt.avif"
+                  alt="bienvenido"
+                  width="100"
+                />
+                <figcaption>Bienvenido Sáez</figcaption>
+              </figure>
+            </td>
+            <td>
+              <p>
+                Bienvenido cuenta con más de 15 años de experiencia en el mundo
+                de la educación, especialmente enseñando HTML, CSS, Javascript y
+                Django.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <figure>
+                <img
+                  src="./assets/carlos-CF0nd2FS.avif"
+                  alt="carlos"
+                  width="100"
+                />
+                <figcaption>Carlos Azaustre</figcaption>
+              </figure>
+            </td>
+            <td>
+              <p>
+                Está reconocido por Google desde 2019 como Developer Expert GDE
+                en Tecnologías web y premiado en 2022 y 2023 como Microsoft MVP
+                (Most Valuable Professional).
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <figure>
+                <img
+                  src="./assets/chema-BJblGkxk.avif"
+                  alt="chema"
+                  width="100"
+                />
+                <figcaption>Chema Alonso</figcaption>
+              </figure>
+            </td>
+            <td>
+              <p>
+                Es actualmente CDO (Chief Digital Officer) de Telefónica, y es
+                responsable de Innovación, Datos, Plataformas, Productos y
+                Servicios Digitales.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <figure>
+                <img
+                  src="./assets/ivan-CmfFv3dX.avif"
+                  alt="ivan"
+                  width="100"
+                />
+                <figcaption>Iván Martín</figcaption>
+              </figure>
+            </td>
+            <td>
+              <p>
+                Consultor especialista en inteligencia artificial para KPMG
+                mejorando los procesos internos para mejorar su eficiencia.
+                Actualmente es responsable global de Información No Financiera y
+                Sostenibilidad en Acciona.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <figure>
+                <img
+                  src="./assets/javier-6_L56Av5.avif"
+                  alt="javier"
+                  width="100"
+                />
+                <figcaption>Javier Marcos</figcaption>
+              </figure>
+            </td>
+            <td>
+              <p>
+                Tras haber trabajado en empresas como AirBNB, Uber y Facebook,
+                actualmente es uno de los cargos más importantes de Chainlink.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <figure>
+                <img
+                  src="./assets/pedro-O_4szRnT.avif"
+                  alt="pedro"
+                  width="100"
+                />
+                <figcaption>Pedro Plasencia</figcaption>
+              </figure>
+            </td>
+            <td>
+              <p>
+                Es arquitecto líder front-end con una pasión desbordante por
+                crear aplicaciones escalables y eficientes. Mi experiencia
+                abarca big data, arquitectura, implementación de mejores
+                prácticas.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <figure>
+                <img
+                  src="./assets/victor-BO8SNIJ4.avif"
+                  alt="victor"
+                  width="100"
+                />
+                <figcaption>Víctor Quilón</figcaption>
+              </figure>
+            </td>
+            <td>
+              <p>
+                Senior Machine Learning Engineeren Indra, desarrollando
+                aplicativos/asistentes que usan técnicas de IA Generativa y NLP.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <figure>
+                <img
+                  src="./assets/yolanda-DxbDbxLr.avif"
+                  alt="yolanda"
+                  width="100"
+                />
+                <figcaption>Yolanda López</figcaption>
+              </figure>
+            </td>
+            <td>
+              <p>
+                Enseña SQL y todo el área dedicada al procesamiento de datos
+                dentro de nuestro Máster, así como el lenguaje de programación
+                Solidity.
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <footer>
+      <section>
+        <p>
+          Consulta Nuestro Aviso legal dando
+          <a href="aviso_legal.html">click aqui</a>
+        </p>
+      </section>
+    </footer>
+  </body>
+</html>
